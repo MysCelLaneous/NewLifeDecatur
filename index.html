@@ -287,7 +287,62 @@ footer img{
   width:120px;
   margin:0 auto 14px;
 }
+.hero{
+  min-height:92vh;
+}
 
+.hero-logo{
+  width:min(420px,75vw);
+}
+
+.section{
+  padding:85px 0;
+}
+
+.card,
+.ministry{
+  background:linear-gradient(180deg,#14141d,#0f0f15);
+}
+
+.ministry{
+  min-height:115px;
+}
+
+.statement{
+  padding:90px 6%;
+}
+
+.statement p{
+  max-width:900px;
+}
+
+.giving-box{
+  padding:60px 8%;
+}
+
+.logo-small{
+  width:70px;
+}
+
+.nav{
+  min-height:74px;
+}
+
+.section::before{
+  content:"";
+  display:block;
+  width:70px;
+  height:3px;
+  margin-bottom:28px;
+  background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));
+  border-radius:999px;
+}
+
+.center::before,
+.giving-box::before{
+  margin-left:auto;
+  margin-right:auto;
+}
 @media(max-width:850px){
   .menu{display:block}
   .nav-links{
