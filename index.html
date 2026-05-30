@@ -1,438 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>New Life Church of God | Decatur, Illinois</title>
-
-<link rel="stylesheet" href="styles.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Life Church of God | Decatur, IL</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-<header class="header">
+<header class="site-header">
+  <a href="#home" class="brand">
+    <img src="logo.png" alt="New Life Church of God Logo" />
+  </a>
 
-<div class="logo-area">
-<img src="logo.png" alt="New Life Church of God Logo" class="header-logo">
-</div>
+  <button class="menu-toggle" id="menuToggle">Menu</button>
 
-<nav>
-<a href="#about">About</a>
-<a href="#pastor">Pastor</a>
-<a href="#ministries">Ministries</a>
-<a href="#giving">Giving</a>
-<a href="#contact">Contact</a>
-</nav>
-
+  <nav id="mainNav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#pastor">Pastor</a>
+    <a href="#ministries">Ministries</a>
+    <a href="#giving">Giving</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
+<main id="home">
+
 <section class="hero">
+  <div class="hero-bg"></div>
 
-<div class="hero-content">
+  <div class="hero-content reveal">
+    <p class="eyebrow">Welcome to New Life</p>
 
-<img src="logo.png" alt="New Life Church of God Logo" class="hero-logo">
+    <img src="logo.png" alt="New Life Church of God Logo" class="hero-logo" />
 
-<p class="hero-subtitle">
-A Growing Church. A Loving Family. A Place for New Life.
-</p>
+    <p class="hero-text">
+      A growing church in Decatur where faith, family, worship, and new life come together.
+    </p>
 
-<div class="hero-buttons">
-<a href="#contact" class="btn btn-primary">Plan Your Visit</a>
-<a href="#giving" class="btn btn-secondary">Give Online</a>
-</div>
-
-</div>
-
+    <div class="button-row">
+      <a href="#contact" class="btn primary">Plan Your Visit</a>
+      <a href="#giving" class="btn secondary">Give Online</a>
+    </div>
+  </div>
 </section>
 
-<section class="service-cards">
+<section class="quick-info reveal">
+  <div class="info-card">
+    <span>Sunday School</span>
+    <strong>9:00 AM</strong>
+  </div>
 
-<div class="service-card">
-<h3>Sunday School</h3>
-<p>9:00 AM</p>
-</div>
+  <div class="info-card featured">
+    <span>Morning Worship</span>
+    <strong>10:00 AM</strong>
+  </div>
 
-<div class="service-card">
-<h3>Morning Worship</h3>
-<p>10:00 AM</p>
-</div>
-
-<div class="service-card">
-<h3>Family Night</h3>
-<p>Wednesday 6:30 PM</p>
-</div>
-
+  <div class="info-card">
+    <span>Family Night</span>
+    <strong>Wed. 6:30 PM</strong>
+  </div>
 </section>
 
-<section id="about" class="section">
+<section id="about" class="section split reveal">
+  <div>
+    <p class="section-label">About Us</p>
+    <h1>Faith that grows. Family that cares. Worship that matters.</h1>
+  </div>
 
-<div class="section-heading">
-<span>ABOUT US</span>
-<h2>Welcome Home</h2>
-</div>
+  <div class="section-copy">
+    <p>
+      New Life Church of God is a Christ-centered church family located in Decatur, Illinois.
+      We are committed to worship, biblical teaching, discipleship, prayer, outreach, and helping
+      people experience new life through Jesus Christ.
+    </p>
 
-<p>
-New Life Church of God is a Christ-centered church located in Decatur, Illinois.
-We are committed to worship, discipleship, biblical teaching, community outreach,
-and helping people experience the transforming power of Jesus Christ.
-</p>
-
-<p>
-Whether you're looking for a church home, returning to faith, or simply searching
-for answers, there's a place for you at New Life.
-</p>
-
+    <p>
+      Whether you are new to church, returning to faith, or looking for a place to grow, there is
+      room for you at New Life.
+    </p>
+  </div>
 </section>
 
-<section id="pastor" class="section dark-section">
-
-<div class="section-heading">
-<span>MEET THE PASTOR</span>
-<h2>Elder Timothy D. Shelley</h2>
-</div>
-
-<p>
-Elder Timothy D. Shelley serves as Pastor of New Life Church of God with a heart
-for teaching God's Word, building strong families, and serving the Decatur community.
-His desire is to see lives transformed through faith in Jesus Christ.
-</p>
-
+<section id="pastor" class="pastor-section reveal">
+  <div class="pastor-card">
+    <p class="section-label">Meet The Pastor</p>
+    <h1>Elder Timothy D. Shelley</h1>
+    <p>
+      Elder Timothy D. Shelley serves as Pastor of New Life Church of God with a heart for teaching
+      God’s Word, strengthening families, building community, and seeing lives transformed through
+      the power of Jesus Christ.
+    </p>
+  </div>
 </section>
 
-<section id="ministries" class="section">
+<section id="ministries" class="section reveal">
+  <p class="section-label">Ministries</p>
+  <h1>Find your place to grow and serve.</h1>
 
-<div class="section-heading">
-<span>MINISTRIES</span>
-<h2>Get Connected</h2>
-</div>
-
-<div class="ministries-grid">
-
-<div class="ministry-card">Sunday School</div>
-<div class="ministry-card">Youth Ministry</div>
-<div class="ministry-card">Music Ministry</div>
-<div class="ministry-card">Community Outreach</div>
-<div class="ministry-card">Midweek Family Night</div>
-<div class="ministry-card">Prayer Ministry</div>
-
-</div>
-
+  <div class="ministry-grid">
+    <div class="ministry-card">Sunday School</div>
+    <div class="ministry-card">Youth Ministry</div>
+    <div class="ministry-card">Music Ministry</div>
+    <div class="ministry-card">Prayer Ministry</div>
+    <div class="ministry-card">Midweek Family Night</div>
+    <div class="ministry-card">Community Outreach</div>
+  </div>
 </section>
 
-<section id="giving" class="section giving-section">
+<section id="giving" class="giving-section reveal">
+  <div class="giving-card">
+    <p class="section-label">Giving</p>
+    <h1>Support the ministry.</h1>
+    <p>
+      Your generosity helps New Life continue worship, outreach, ministry, and service in the
+      Decatur community.
+    </p>
 
-<div class="section-heading center">
-<span>GIVING</span>
-<h2>Support The Ministry</h2>
-</div>
-
-<p>
-Your generosity helps us continue ministry, outreach,
-missions, worship, and service to our community.
-</p>
-
-<div class="hero-buttons">
-<a href="#" class="btn btn-primary">Give With Givelify</a>
-<a href="#" class="btn btn-secondary">Give With Cash App</a>
-</div>
-
+    <div class="button-row">
+      <a href="#" class="btn primary">Give with Givelify</a>
+      <a href="#" class="btn secondary">Give with Cash App</a>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="section">
+<section id="contact" class="section contact-section reveal">
+  <div>
+    <p class="section-label">Contact Us</p>
+    <h1>Visit New Life</h1>
 
-<div class="section-heading">
-<span>CONTACT US</span>
-<h2>Visit New Life</h2>
-</div>
+    <div class="contact-list">
+      <p><strong>Address</strong><br>1275 E. Division St.<br>Decatur, IL 62526</p>
+      <p><strong>Phone</strong><br><a href="tel:2173620090">(217) 362-0090</a></p>
+      <p><strong>Facebook</strong><br>New Life Church of God Decatur</p>
+      <p><strong>Instagram</strong><br>@NewLife_Decatur</p>
+    </div>
+  </div>
 
-<div class="contact-grid">
-
-<div>
-
-<h4>Address</h4>
-<p>
-1275 E. Division Street<br>
-Decatur, Illinois 62526
-</p>
-
-<h4>Phone</h4>
-<p>(217) 362-0090</p>
-
-<h4>Facebook</h4>
-<p>New Life Church of God Decatur</p>
-
-<h4>Instagram</h4>
-<p>@NewLife_Decatur</p>
-
-</div>
-
-<div>
-
-<iframe
-src="https://www.google.com/maps?q=1275%20E.%20Division%20Street%20Decatur%20IL%2062526&output=embed"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</div>
-
-</div>
-
+  <div class="map-wrap">
+    <iframe
+      src="https://www.google.com/maps?q=1275%20E.%20Division%20St%20Decatur%20IL%2062526&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
 </section>
+
+</main>
 
 <footer>
-
-<img src="logo.jpeg" alt="Church Logo">
-
-<p>
-© 2026 New Life Church of God • Decatur, Illinois
-</p>
-
+  <img src="logo.png" alt="New Life Church of God Logo" />
+  <p>© 2026 New Life Church of God • Decatur, Illinois</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-font-family:'Inter',sans-serif;
-background:#ffffff;
-color:#15152a;
-line-height:1.7;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fbfbff;
+  color: #151326;
+  line-height: 1.6;
 }
 
-.header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 6%;
-background:rgba(255,255,255,.92);
-backdrop-filter:blur(14px);
-z-index:1000;
-border-bottom:1px solid rgba(0,0,0,.05);
+.site-header {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1120px, 92%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 45px rgba(35, 20, 70, 0.12);
 }
 
-.header-logo{
-width:80px;
+.brand img {
+  width: 82px;
+  display: block;
 }
 
-nav{
-display:flex;
-gap:30px;
+nav {
+  display: flex;
+  gap: 22px;
 }
 
-nav a{
-text-decoration:none;
-font-weight:700;
-color:#15152a;
-transition:.3s;
+nav a {
+  color: #151326;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.95rem;
 }
 
-nav a:hover{
-color:#9b3df3;
+nav a:hover {
+  color: #8b2ff7;
 }
 
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:120px 20px;
-background:
-radial-gradient(circle at 15% 20%, rgba(74,201,255,.25), transparent 35%),
-radial-gradient(circle at 85% 25%, rgba(255,0,140,.18), transparent 35%),
-linear-gradient(135deg,#ffffff,#f8f3ff);
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: #151326;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 800;
 }
 
-.hero-content{
-text-align:center;
-max-width:1000px;
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 150px 6% 120px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(62, 199, 255, 0.26), transparent 34%),
+    radial-gradient(circle at 85% 25%, rgba(255, 46, 174, 0.24), transparent 34%),
+    linear-gradient(135deg, #ffffff, #f6f1ff);
 }
 
-.hero-logo{
-width:min(700px,95%);
-margin-bottom:30px;
-filter:drop-shadow(0 25px 40px rgba(0,0,0,.15));
+.hero-bg {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(64, 199, 255, 0.3), rgba(143, 47, 247, 0.3), rgba(255, 47, 165, 0.3));
+  filter: blur(40px);
+  opacity: 0.6;
 }
 
-.hero-subtitle{
-font-size:1.5rem;
-font-weight:500;
-max-width:700px;
-margin:auto auto 40px;
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 980px;
 }
 
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
+.eyebrow,
+.section-label {
+  color: #8b2ff7;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.82rem;
+  font-weight: 900;
+  margin-bottom: 14px;
 }
 
-.btn{
-padding:16px 30px;
-border-radius:999px;
-text-decoration:none;
-font-weight:800;
-transition:.3s;
+.hero-logo {
+  width: min(760px, 94vw);
+  margin: 10px auto 24px;
+  filter: drop-shadow(0 30px 45px rgba(80, 35, 160, 0.22));
 }
 
-.btn-primary{
-background:linear-gradient(135deg,#4ac9ff,#8338ec,#ff2fa5);
-color:white;
+.hero-text {
+  max-width: 760px;
+  margin: 0 auto 34px;
+  font-size: clamp(1.2rem, 2.3vw, 1.8rem);
+  color: #343047;
 }
 
-.btn-primary:hover{
-transform:translateY(-3px);
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.btn-secondary{
-border:2px solid #d7c3ff;
-background:white;
-color:#8338ec;
+.btn {
+  display: inline-block;
+  padding: 15px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.service-cards{
-width:min(1200px,92%);
-margin:-70px auto 100px;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
+.btn:hover {
+  transform: translateY(-3px);
 }
 
-.service-card{
-background:white;
-padding:35px;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-text-align:center;
+.primary {
+  color: white;
+  background: linear-gradient(135deg, #3ec7ff, #8b2ff7, #ff2fa5);
+  box-shadow: 0 18px 38px rgba(139, 47, 247, 0.28);
 }
 
-.service-card h3{
-font-size:1.5rem;
-margin-bottom:10px;
+.secondary {
+  color: #8b2ff7;
+  background: white;
+  border: 2px solid #e5d6ff;
 }
 
-.service-card p{
-font-weight:700;
-color:#8338ec;
+.quick-info {
+  width: min(1120px, 92%);
+  margin: -82px auto 80px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
-.section{
-width:min(1100px,90%);
-margin:auto;
-padding:100px 0;
+.info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 28px;
+  box-shadow: 0 22px 55px rgba(35, 20, 70, 0.1);
+  text-align: center;
 }
 
-.section-heading{
-margin-bottom:30px;
+.info-card span {
+  display: block;
+  color: #8b2ff7;
+  font-weight: 900;
+  margin-bottom: 8px;
 }
 
-.section-heading span{
-font-size:.8rem;
-font-weight:800;
-letter-spacing:3px;
-color:#8338ec;
+.info-card strong {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
 }
 
-.section-heading h2{
-font-size:3rem;
-margin-top:10px;
+.featured {
+  background: #151326;
+  color: white;
 }
 
-.dark-section{
-background:#15152a;
-color:white;
-padding-left:5%;
-padding-right:5%;
-width:100%;
-max-width:none;
+.section {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+  padding: 95px 0;
 }
 
-.ministries-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-top:30px;
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 55px;
+  align-items: start;
 }
 
-.ministry-card{
-background:white;
-padding:30px;
-border-radius:25px;
-text-align:center;
-font-weight:800;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
+h1 {
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  line-height: 1.05;
+  letter-spacing: -2px;
 }
 
-.giving-section{
-text-align:center;
+.section-copy p,
+.pastor-card p,
+.giving-card p,
+.contact-list p {
+  font-size: 1.12rem;
+  margin-bottom: 18px;
+  color: #343047;
 }
 
-.contact-grid{
-display:grid;
-grid-template-columns:1fr 1.2fr;
-gap:40px;
-margin-top:30px;
+.pastor-section {
+  padding: 110px 6%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(62, 199, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 80% 40%, rgba(255, 47, 165, 0.18), transparent 28%),
+    #151326;
+  color: white;
 }
 
-.contact-grid iframe{
-width:100%;
-height:400px;
-border:none;
-border-radius:25px;
+.pastor-card {
+  width: min(1120px, 90%);
+  margin: 0 auto;
 }
 
-footer{
-background:#15152a;
-color:white;
-padding:60px 20px;
-text-align:center;
+.pastor-card p {
+  max-width: 780px;
+  color: #eeeaff;
 }
 
-footer img{
-width:140px;
-margin-bottom:20px;
+.ministry-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
-@media(max-width:900px){
-
-.header{
-flex-direction:column;
-gap:15px;
+.ministry-card {
+  min-height: 150px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 28px;
+  border-radius: 30px;
+  background: white;
+  font-size: 1.25rem;
+  font-weight: 900;
+  box-shadow: 0 22px 55px rgba(35, 20, 70, 0.09);
+  border: 1px solid rgba(139, 47, 247, 0.08);
 }
 
-.service-cards,
-.ministries-grid,
-.contact-grid{
-grid-template-columns:1fr;
+.giving-section {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+  padding: 90px 0;
 }
 
-.hero-logo{
-width:95%;
+.giving-card {
+  text-align: center;
+  border-radius: 38px;
+  padding: 70px 8%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(62, 199, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(255, 47, 165, 0.20), transparent 30%),
+    white;
+  box-shadow: 0 25px 65px rgba(35, 20, 70, 0.1);
 }
 
-.section-heading h2{
-font-size:2.2rem;
+.giving-card p {
+  margin: 0 auto 28px;
+  max-width: 720px;
 }
 
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 36px;
+  align-items: stretch;
 }
-console.log("New Life Church of God loaded successfully.");
+
+.contact-list {
+  margin-top: 24px;
+}
+
+.contact-list a {
+  color: #8b2ff7;
+  font-weight: 900;
+}
+
+.map-wrap {
+  overflow: hidden;
+  border-radius: 34px;
+  box-shadow: 0 25px 65px rgba(35, 20, 70, 0.12);
+  min-height: 430px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+footer {
+  text-align: center;
+  background: #151326;
+  color: white;
+  padding: 50px 6%;
+}
+
+footer img {
+  width: 150px;
+  margin-bottom: 14px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 850px) {
+  .site-header {
+    top: 10px;
+    border-radius: 28px;
+    align-items: flex-start;
+  }
+
+  .brand img {
+    width: 72px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 45px rgba(35, 20, 70, 0.12);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  .quick-info,
+  .split,
+  .ministry-grid,
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-info {
+    margin-top: -60px;
+  }
+
+  .hero {
+    padding-top: 140px;
+  }
+}
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+menuToggle.addEventListener("click", () => {
+  mainNav.classList.toggle("open");
+});
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+reveals.forEach(section => observer.observe(section));
