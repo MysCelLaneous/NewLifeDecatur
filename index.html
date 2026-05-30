@@ -56,9 +56,19 @@ h1{font-size:clamp(2.7rem,6vw,5.6rem);line-height:1;letter-spacing:-3px}
 .section::before{content:"";display:block;width:70px;height:3px;margin-bottom:28px;background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));border-radius:999px}
 .center::before{margin-left:auto;margin-right:auto}
 
-.motto{text-align:center;padding:100px 6%;background:#0e0e14;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.motto h2{font-size:clamp(2.4rem,5vw,4.8rem);line-height:1.08;letter-spacing:-2px}
-.motto span{background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.motto{
+text-align:center;
+padding:120px 6%;
+background:
+linear-gradient(rgba(14,14,20,.9),rgba(14,14,20,.9)),
+radial-gradient(circle at 20% 30%,rgba(57,189,242,.18),transparent 35%),
+radial-gradient(circle at 80% 30%,rgba(233,67,168,.18),transparent 35%);
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+}
+.motto h2{
+font-size:clamp(3rem,6.5vw,6rem);
+  .motto span{background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .motto p{color:#d7d1c8;margin:20px auto 0;max-width:760px;font-size:1.15rem}
 
 .times,.ministries,.events{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:38px}
@@ -97,19 +107,20 @@ font-weight:800;
 
 .pastor{
 display:grid;
-grid-template-columns:420px 1fr;
-gap:60px;
+grid-template-columns:1fr 1fr;
+gap:70px;
 align-items:center;
 }
-.pastor-photo{width:260px;max-width:260px;margin:auto;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#111;box-shadow:0 24px 70px rgba(0,0,0,.42)}
 .pastor-photo{
 width:100%;
-max-width:420px;
-height:auto;
-object-fit:cover;
-border-radius:24px;
+max-width:360px;
+justify-self:end;
 margin:0;
-box-shadow:0 20px 50px rgba(0,0,0,.45);
+border-radius:24px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.18);
+background:#111;
+box-shadow:0 24px 70px rgba(0,0,0,.42);
 }
   .copy p{color:#d7d1c8;font-size:1.1rem;margin-top:18px;max-width:680px}
 
