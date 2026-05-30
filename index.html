@@ -13,8 +13,6 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
 :root{
---black:#08080b;
---soft:#121218;
 --cream:#f7f4ee;
 --muted:#b8b3aa;
 --blue:#39bdf2;
@@ -29,8 +27,8 @@ position:fixed;
 inset:0;
 background-image:url("logo.png");
 background-repeat:repeat;
-background-size:190px;
-opacity:.018;
+background-size:400px;
+opacity:.008;
 pointer-events:none;
 z-index:-1;
 }
@@ -63,32 +61,51 @@ h1{font-size:clamp(2.7rem,6vw,5.6rem);line-height:1;letter-spacing:-3px}
 .motto span{background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .motto p{color:#d7d1c8;margin:20px auto 0;max-width:760px;font-size:1.15rem}
 
-.times{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:38px}
-.card{background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.14);padding:30px;border-radius:20px;box-shadow:0 24px 70px rgba(0,0,0,.32)}
-.card span{color:var(--muted);display:block;margin-bottom:8px;font-weight:700}
-.card strong{font-size:1.85rem}
+.times,.ministries,.events{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:38px}
+
+.card,.ministry,.event{
+background:
+linear-gradient(180deg,rgba(255,255,255,.105),rgba(255,255,255,.045));
+border:1px solid rgba(255,255,255,.19);
+border-radius:22px;
+box-shadow:
+0 24px 70px rgba(0,0,0,.4),
+inset 0 1px 0 rgba(255,255,255,.08);
+transition:.25s ease;
+}
+
+.card:hover,.ministry:hover,.event:hover{
+transform:translateY(-6px);
+border-color:rgba(57,189,242,.48);
+box-shadow:
+0 28px 85px rgba(0,0,0,.5),
+0 0 38px rgba(57,189,242,.13),
+inset 0 1px 0 rgba(255,255,255,.12);
+}
+
+.card{padding:34px;text-align:center}
+.card span{color:var(--muted);display:block;margin-bottom:8px;font-weight:800}
+.card strong{font-size:1.9rem;background:linear-gradient(90deg,var(--blue),#fff,var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .card p{color:#d7d1c8;margin-top:10px}
 
 .statement{padding:95px 6%;background:#0e0e14;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .statement p{width:min(950px,92%);margin:auto;font-size:clamp(2rem,4vw,3.8rem);line-height:1.12;font-weight:900;letter-spacing:-2px}
 
-.pastor{display:grid;grid-template-columns:280px 1fr;gap:55px;align-items:center}
-.pastor-photo{width:260px;max-width:260px;margin:auto;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#111}
+.pastor{display:grid;grid-template-columns:300px 1fr;gap:55px;align-items:center}
+.pastor-photo{width:260px;max-width:260px;margin:auto;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#111;box-shadow:0 24px 70px rgba(0,0,0,.42)}
 .pastor-photo img{width:100%;height:auto;display:block}
 .copy p{color:#d7d1c8;font-size:1.1rem;margin-top:18px;max-width:680px}
 
-.ministries{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:38px}
-.ministry{min-height:125px;background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
-.ministry h3{font-size:1.35rem;margin-bottom:8px}
+.ministry{min-height:135px;padding:30px}
+.ministry h3{font-size:1.4rem;margin-bottom:8px}
 .ministry p{color:#d7d1c8}
 
-.events{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:38px}
-.event{background:#101017;border:1px solid var(--line);border-radius:20px;padding:30px}
+.event{padding:32px}
 .event-tag{display:inline-block;color:var(--blue);font-size:.75rem;font-weight:900;letter-spacing:2px;margin-bottom:14px}
-.event h3{font-size:1.55rem;margin-bottom:8px}
+.event h3{font-size:1.6rem;margin-bottom:8px}
 .event p{color:#d7d1c8}
 
-.giving-box{background:linear-gradient(rgba(18,18,24,.86),rgba(18,18,24,.86)),radial-gradient(circle at 20% 20%,rgba(57,189,242,.28),transparent 35%),radial-gradient(circle at 80% 30%,rgba(233,67,168,.2),transparent 35%);border:1px solid var(--line);border-radius:28px;padding:60px 8%;text-align:center}
+.giving-box{background:linear-gradient(rgba(18,18,24,.86),rgba(18,18,24,.86)),radial-gradient(circle at 20% 20%,rgba(57,189,242,.28),transparent 35%),radial-gradient(circle at 80% 30%,rgba(233,67,168,.2),transparent 35%);border:1px solid rgba(255,255,255,.19);border-radius:28px;padding:60px 8%;text-align:center;box-shadow:0 30px 85px rgba(0,0,0,.45)}
 .giving-box::before{content:"";display:block;width:70px;height:3px;margin:0 auto 28px;background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));border-radius:999px}
 .giving-box p{color:#d7d1c8;max-width:680px;margin:20px auto 30px}
 
@@ -96,7 +113,7 @@ h1{font-size:clamp(2.7rem,6vw,5.6rem);line-height:1;letter-spacing:-3px}
 .contact p{color:#d7d1c8;margin-top:18px}
 .contact strong{color:var(--cream)}
 .contact a{color:var(--blue);font-weight:800}
-.map{min-height:430px;border-radius:24px;overflow:hidden;border:1px solid var(--line)}
+.map{min-height:430px;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.19);box-shadow:0 24px 70px rgba(0,0,0,.42)}
 iframe{width:100%;height:100%;border:0}
 
 footer{text-align:center;padding:50px 6%;border-top:1px solid var(--line);color:var(--muted)}
@@ -110,7 +127,7 @@ footer img{width:110px;margin:0 auto 14px}
 .hero-logo{width:min(300px,72vw)}
 h1{font-size:clamp(2.15rem,11vw,3.2rem)}
 .times,.pastor,.ministries,.events,.contact{grid-template-columns:1fr}
-.card{padding:22px}
+.card{padding:24px}
 .card strong{font-size:1.55rem}
 .pastor{gap:30px}
 .pastor-photo{width:220px;max-width:220px}
@@ -153,7 +170,6 @@ h1{font-size:clamp(2.15rem,11vw,3.2rem)}
 </section>
 
 <section class="motto">
-<p class="kicker">Our Saying</p>
 <h2>You Have Just Stepped Into <span>Your New Life!</span></h2>
 <p>A place where faith grows, families connect, and lives are transformed through Jesus Christ.</p>
 </section>
@@ -171,7 +187,7 @@ h1{font-size:clamp(2.15rem,11vw,3.2rem)}
 </section>
 
 <section class="statement">
-<p>Building people through faith, worship, discipleship, and the love of Jesus Christ.</p>
+<p>A church where faith grows, families connect, and lives are transformed through Jesus Christ.</p>
 </section>
 
 <section id="pastor" class="section pastor">
