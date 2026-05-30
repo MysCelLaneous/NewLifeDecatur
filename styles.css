@@ -1,0 +1,110 @@
+:root {
+  --blue: #42b8e8;
+  --purple: #6d23d8;
+  --pink: #ef4bb8;
+  --coral: #f19a82;
+  --dark: #171427;
+  --light: #f8f7ff;
+  --white: #ffffff;
+  --shadow: 0 20px 60px rgba(23, 20, 39, 0.12);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--light);
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(109, 35, 216, 0.12);
+}
+.navbar {
+  max-width: 1180px;
+  margin: auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 800; }
+.brand img { width: 54px; height: 54px; object-fit: contain; }
+.nav-links { display: flex; gap: 1rem; align-items: center; font-weight: 700; font-size: 0.95rem; }
+.nav-links a:hover { color: var(--purple); }
+.menu-toggle { display: none; border: 0; background: transparent; font-size: 1.8rem; cursor: pointer; }
+.hero {
+  min-height: 78vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 4rem 1.25rem;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(66, 184, 232, 0.28), transparent 32%),
+    radial-gradient(circle at 78% 30%, rgba(239, 75, 184, 0.25), transparent 34%),
+    linear-gradient(135deg, #ffffff 0%, #f7f1ff 100%);
+}
+.hero-content { max-width: 900px; }
+.hero-logo { width: min(360px, 80vw); margin-bottom: 1rem; filter: drop-shadow(0 18px 25px rgba(109,35,216,.15)); }
+.eyebrow { color: var(--purple); text-transform: uppercase; letter-spacing: 0.16em; font-weight: 800; font-size: 0.78rem; margin: 0 0 0.65rem; }
+h1 { font-size: clamp(2.4rem, 7vw, 5.5rem); line-height: 1; margin: 0; }
+h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin: 0 0 1rem; }
+h3 { margin-top: 0; }
+.hero-text { font-size: 1.25rem; max-width: 650px; margin: 1.25rem auto 2rem; }
+.hero-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: var(--shadow);
+}
+.btn.primary { color: white; background: linear-gradient(135deg, var(--purple), var(--pink)); }
+.btn.secondary { color: var(--purple); background: white; border: 2px solid rgba(109, 35, 216, 0.18); }
+.quick-info {
+  max-width: 1180px;
+  margin: -3rem auto 0;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  position: relative;
+}
+.quick-info article, .feature-card, .ministry-card, .contact-box, .giving {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(109, 35, 216, 0.1);
+}
+.section { max-width: 1180px; margin: auto; padding: 5rem 1.25rem; }
+.split { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 3rem; align-items: start; }
+.feature-card { display: grid; grid-template-columns: 260px 1fr; gap: 2rem; align-items: center; }
+.photo-placeholder {
+  min-height: 260px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: white;
+  background: linear-gradient(135deg, var(--blue), var(--purple), var(--pink));
+}
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.ministry-card { min-height: 170px; }
+.giving { text-align: center; }
+.contact-box { max-width: 760px; }
+footer { text-align: center; padding: 2rem 1rem; background: var(--dark); color: white; }
+@media (max-width: 820px) {
+  .menu-toggle { display: block; }
+  .nav-links { display: none; position: absolute; left: 1rem; right: 1rem; top: 78px; background: white; padding: 1rem; border-radius: 18px; box-shadow: var(--shadow); flex-direction: column; align-items: flex-start; }
+  .nav-links.open { display: flex; }
+  .quick-info, .split, .feature-card, .grid { grid-template-columns: 1fr; }
+  .quick-info { margin-top: 1rem; }
+}
