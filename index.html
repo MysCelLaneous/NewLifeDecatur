@@ -8,17 +8,17 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#08080b;color:#f7f4ee;line-height:1.6}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
+body{font-family:Arial,Helvetica,sans-serif;background:#07070a;color:#f7f4ee;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
 
 :root{
 --cream:#f7f4ee;
---muted:#c9c3ba;
+--muted:#d7d1c8;
 --blue:#39bdf2;
 --purple:#7d37df;
 --pink:#e943a8;
---line:rgba(255,255,255,.14);
+--line:rgba(255,255,255,.16);
 }
 
 body::before{
@@ -26,8 +26,8 @@ content:"";
 position:fixed;
 inset:0;
 background-image:url("logo.png");
+background-size:430px;
 background-repeat:repeat;
-background-size:420px;
 opacity:.006;
 pointer-events:none;
 z-index:-1;
@@ -37,8 +37,8 @@ z-index:-1;
 position:fixed;
 top:0;
 width:100%;
-z-index:50;
-background:rgba(8,8,11,.92);
+z-index:100;
+background:rgba(7,7,10,.92);
 backdrop-filter:blur(14px);
 border-bottom:1px solid var(--line);
 }
@@ -46,10 +46,10 @@ border-bottom:1px solid var(--line);
 .nav{
 width:min(1180px,92%);
 margin:auto;
-min-height:78px;
+height:78px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 }
 
 .logo-small{width:72px}
@@ -57,7 +57,7 @@ align-items:center;
 .nav-links{
 display:flex;
 gap:28px;
-font-weight:700;
+font-weight:800;
 color:#ddd8cf;
 }
 
@@ -65,12 +65,12 @@ color:#ddd8cf;
 
 .menu{
 display:none;
-background:none;
+background:transparent;
 border:1px solid var(--line);
 color:var(--cream);
-padding:9px 14px;
+padding:9px 16px;
 border-radius:999px;
-font-weight:700;
+font-weight:800;
 }
 
 .hero{
@@ -78,13 +78,14 @@ min-height:92vh;
 padding:145px 6% 90px;
 display:grid;
 place-items:center;
+text-align:center;
 background:
-linear-gradient(rgba(8,8,11,.35),rgba(8,8,11,1)),
+linear-gradient(rgba(7,7,10,.3),rgba(7,7,10,1)),
 radial-gradient(circle at 20% 25%,rgba(57,189,242,.16),transparent 32%),
-radial-gradient(circle at 80% 20%,rgba(233,67,168,.12),transparent 32%);
+radial-gradient(circle at 80% 20%,rgba(233,67,168,.13),transparent 32%);
 }
 
-.hero-inner{text-align:center;width:min(920px,100%)}
+.hero-inner{width:min(920px,100%)}
 .hero-logo{width:min(390px,72vw);margin:0 auto 34px}
 
 .kicker{
@@ -92,7 +93,7 @@ color:var(--blue);
 text-transform:uppercase;
 letter-spacing:3px;
 font-size:.78rem;
-font-weight:800;
+font-weight:900;
 margin-bottom:14px;
 }
 
@@ -103,7 +104,7 @@ letter-spacing:-3px;
 }
 
 .lead{
-color:#d7d1c8;
+color:var(--muted);
 font-size:clamp(1.15rem,2vw,1.45rem);
 max-width:720px;
 margin:26px auto 34px;
@@ -111,35 +112,26 @@ margin:26px auto 34px;
 
 .buttons{
 display:flex;
-justify-content:center;
 gap:14px;
+justify-content:center;
 flex-wrap:wrap;
 }
 
 .btn{
+display:inline-block;
 padding:14px 26px;
 border-radius:999px;
-font-weight:800;
-display:inline-block;
+font-weight:900;
 }
 
-.primary{
-background:linear-gradient(135deg,var(--blue),var(--purple),var(--pink));
-color:white;
-}
-
-.secondary{
-border:1px solid var(--line);
-color:var(--cream);
-}
+.primary{background:linear-gradient(135deg,var(--blue),var(--purple),var(--pink));color:white}
+.secondary{border:1px solid var(--line);color:white}
 
 .section{
 width:min(1180px,92%);
 margin:auto;
 padding:90px 0;
 }
-
-.center{text-align:center}
 
 .section::before{
 content:"";
@@ -151,6 +143,7 @@ background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));
 border-radius:999px;
 }
 
+.center{text-align:center}
 .center::before{margin-left:auto;margin-right:auto}
 
 .welcome{
@@ -165,7 +158,7 @@ border-bottom:1px solid var(--line);
 }
 
 .welcome h2{
-font-size:clamp(2.6rem,6vw,5.5rem);
+font-size:clamp(2.5rem,6vw,5.4rem);
 line-height:1.08;
 letter-spacing:-2px;
 }
@@ -177,9 +170,9 @@ background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));
 }
 
 .welcome p{
-color:#d7d1c8;
-margin:22px auto 0;
+color:var(--muted);
 max-width:760px;
+margin:22px auto 0;
 font-size:1.15rem;
 }
 
@@ -190,23 +183,18 @@ gap:24px;
 margin-top:38px;
 }
 
-.card,.ministry,.event{
+.card,.ministry,.event,.giving-box{
 background:linear-gradient(180deg,rgba(255,255,255,.105),rgba(255,255,255,.045));
-border:1px solid rgba(255,255,255,.19);
-border-radius:22px;
-box-shadow:
-0 24px 70px rgba(0,0,0,.4),
-inset 0 1px 0 rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.2);
+border-radius:24px;
+box-shadow:0 24px 70px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.08);
 transition:.25s ease;
 }
 
 .card:hover,.ministry:hover,.event:hover{
 transform:translateY(-6px);
 border-color:rgba(57,189,242,.48);
-box-shadow:
-0 28px 85px rgba(0,0,0,.5),
-0 0 38px rgba(57,189,242,.13),
-inset 0 1px 0 rgba(255,255,255,.12);
+box-shadow:0 28px 85px rgba(0,0,0,.5),0 0 38px rgba(57,189,242,.13);
 }
 
 .card{
@@ -215,22 +203,23 @@ text-align:center;
 }
 
 .card span{
-color:var(--muted);
+color:#c9c3ba;
 display:block;
+font-weight:900;
 margin-bottom:8px;
-font-weight:800;
 }
 
 .card strong{
 font-size:1.9rem;
-color:#ffffff;
+color:white;
 font-weight:900;
 }
 
-.card p{
-color:#d7d1c8;
-margin-top:10px;
+.card p,.ministry p,.event p,.pastor-text p,.contact-text p{
+color:var(--muted);
 }
+
+.card p{margin-top:10px}
 
 .statement{
 padding:95px 6%;
@@ -249,53 +238,52 @@ font-weight:900;
 letter-spacing:-2px;
 }
 
-.pastor{
-    display:grid;
-    grid-template-columns:420px 1fr;
-    gap:60px;
-    align-items:center;
+/* FIXED PASTOR LAYOUT */
+.pastor-wrap{
+display:flex;
+align-items:center;
+gap:70px;
 }
 
 .pastor-photo{
-    width:100%;
-    max-width:420px;
-    justify-self:center;
-    border-radius:24px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,.18);
-    background:#111;
-    box-shadow:0 24px 70px rgba(0,0,0,.42);
+flex:0 0 390px;
+max-width:390px;
+border-radius:24px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.18);
+background:#111;
+box-shadow:0 24px 70px rgba(0,0,0,.42);
 }
 
 .pastor-photo img{
-    width:100%;
-    height:auto;
-    display:block;
-}
-  .pastor-copy{
-    max-width:700px;
+width:100%;
+height:auto;
+display:block;
 }
 
-.pastor-copy p{
-color:#d7d1c8;
+.pastor-text{
+flex:1;
+max-width:720px;
+}
+
+.pastor-text p{
 font-size:1.1rem;
 margin-top:18px;
-max-width:680px;
 }
-  
+
 .ministry{
 min-height:135px;
 padding:30px;
 }
 
-.ministry h3{
-font-size:1.4rem;
+.ministry h3,.event h3{
+font-size:1.45rem;
 margin-bottom:8px;
 }
 
-.ministry p{color:#d7d1c8}
-
-.event{padding:32px}
+.event{
+padding:32px;
+}
 
 .event-tag{
 display:inline-block;
@@ -306,23 +294,13 @@ letter-spacing:2px;
 margin-bottom:14px;
 }
 
-.event h3{
-font-size:1.6rem;
-margin-bottom:8px;
-}
-
-.event p{color:#d7d1c8}
-
 .giving-box{
+padding:60px 8%;
+text-align:center;
 background:
 linear-gradient(rgba(18,18,24,.86),rgba(18,18,24,.86)),
 radial-gradient(circle at 20% 20%,rgba(57,189,242,.28),transparent 35%),
 radial-gradient(circle at 80% 30%,rgba(233,67,168,.2),transparent 35%);
-border:1px solid rgba(255,255,255,.19);
-border-radius:28px;
-padding:60px 8%;
-text-align:center;
-box-shadow:0 30px 85px rgba(0,0,0,.45);
 }
 
 .giving-box::before{
@@ -336,26 +314,31 @@ border-radius:999px;
 }
 
 .giving-box p{
-color:#d7d1c8;
+color:var(--muted);
 max-width:680px;
 margin:20px auto 30px;
 }
 
-.contact{
-display:grid;
-grid-template-columns:.85fr 1.15fr;
-gap:40px;
+/* FIXED CONTACT LAYOUT */
+.contact-wrap{
+display:flex;
+gap:50px;
+align-items:flex-start;
 }
 
-.contact p{
-color:#d7d1c8;
+.contact-text{
+flex:0 0 390px;
+}
+
+.contact-text p{
 margin-top:18px;
 }
 
-.contact strong{color:var(--cream)}
-.contact a{color:var(--blue);font-weight:800}
+.contact-text strong{color:white}
+.contact-text a{color:var(--blue);font-weight:900}
 
 .map{
+flex:1;
 min-height:430px;
 border-radius:24px;
 overflow:hidden;
@@ -373,7 +356,7 @@ footer{
 text-align:center;
 padding:50px 6%;
 border-top:1px solid var(--line);
-color:var(--muted);
+color:#c9c3ba;
 }
 
 footer img{
@@ -410,17 +393,10 @@ h1{
 font-size:clamp(2.15rem,11vw,3.2rem);
 }
 
-.times,.pastor,.ministries,.events,.contact{
+.times,.ministries,.events{
 grid-template-columns:1fr;
 }
-.pastor{
-text-align:center;
-}
 
-.pastor-photo{
-max-width:320px;
-margin:auto;
-}
 .card{
 padding:24px;
 }
@@ -429,22 +405,8 @@ padding:24px;
 font-size:1.55rem;
 }
 
-.pastor{
-gap:30px;
-text-align:center;
-}
-
-.pastor-photo{
-max-width:300px;
-margin:auto;
-}
-
 .section{
 padding:72px 0;
-}
-
-.statement p{
-font-size:clamp(1.75rem,9vw,2.7rem);
 }
 
 .welcome{
@@ -453,6 +415,42 @@ padding:85px 6%;
 
 .welcome h2{
 font-size:clamp(2.25rem,11vw,3.4rem);
+}
+
+.statement p{
+font-size:clamp(1.75rem,9vw,2.7rem);
+}
+
+.pastor-wrap{
+flex-direction:column;
+gap:30px;
+text-align:left;
+}
+
+.pastor-photo{
+flex:none;
+width:100%;
+max-width:300px;
+margin:auto;
+}
+
+.pastor-text{
+max-width:100%;
+}
+
+.contact-wrap{
+flex-direction:column;
+gap:34px;
+}
+
+.contact-text{
+flex:none;
+width:100%;
+}
+
+.map{
+width:100%;
+min-height:420px;
 }
 }
 </style>
@@ -511,16 +509,18 @@ font-size:clamp(2.25rem,11vw,3.4rem);
 <p>A church where faith grows, families connect, and lives are transformed through Jesus Christ.</p>
 </section>
 
-<section id="pastor" class="section pastor">
+<section id="pastor" class="section">
+<div class="pastor-wrap">
 <div class="pastor-photo">
 <img src="TimPic.PNG" alt="Elder Timothy D. Shelley">
 </div>
 
-<div class="pastor-copy">
+<div class="pastor-text">
 <p class="kicker">Meet Our Pastor</p>
 <h1>Elder Timothy D. Shelley</h1>
 <p>Elder Timothy D. Shelley serves as Pastor of New Life Church of God with a heart for biblical teaching, discipleship, worship, family, and community outreach.</p>
 <p>His desire is to see lives transformed through the power of Jesus Christ and to help people grow in faith, purpose, and new life.</p>
+</div>
 </div>
 </section>
 
@@ -541,8 +541,8 @@ font-size:clamp(2.25rem,11vw,3.4rem);
 <h1>What’s happening at New Life.</h1>
 
 <div class="events">
-<div class="event"><span class="event-tag">WEEKLY</span><h3>Prayer Power Hour</h3><p>Every Tuesday at Noon<br>Conference Line: 681-999-0257<br>Access Code: 877991</p></div>
-<div class="event"><span class="event-tag">WEEKLY</span><h3>Midweek Family Night</h3><p>Every Wednesday at 6:30 PM</p></div>
+<div class="event"><span class="event-tag">Weekly</span><h3>Prayer Power Hour</h3><p>Every Tuesday at Noon<br>Conference Line: 681-999-0257<br>Access Code: 877991</p></div>
+<div class="event"><span class="event-tag">Weekly</span><h3>Midweek Family Night</h3><p>Every Wednesday at 6:30 PM</p></div>
 </div>
 </section>
 
@@ -558,8 +558,9 @@ font-size:clamp(2.25rem,11vw,3.4rem);
 </div>
 </section>
 
-<section id="contact" class="section contact">
-<div>
+<section id="contact" class="section">
+<div class="contact-wrap">
+<div class="contact-text">
 <p class="kicker">Contact Us</p>
 <h1>Visit New Life</h1>
 <p><strong>Address</strong><br>1275 E. Division St.<br>Decatur, IL 62526</p>
@@ -570,6 +571,7 @@ font-size:clamp(2.25rem,11vw,3.4rem);
 
 <div class="map">
 <iframe src="https://www.google.com/maps?q=1275%20E.%20Division%20St%20Decatur%20IL%2062526&output=embed" loading="lazy"></iframe>
+</div>
 </div>
 </section>
 
