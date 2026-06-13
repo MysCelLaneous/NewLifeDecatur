@@ -188,11 +188,18 @@ margin-top:38px;
 }
 
 .card,.ministry,.event,.giving-box{
-background:linear-gradient(180deg,rgba(255,255,255,.105),rgba(255,255,255,.045));
-border:1px solid rgba(255,255,255,.2);
-border-radius:24px;
-box-shadow:0 24px 70px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.08);
-transition:.25s ease;
+    background:linear-gradient(180deg,rgba(255,255,255,.105),rgba(255,255,255,.045));
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:24px;
+    box-shadow:0 24px 70px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.08);
+    transition:.25s ease;
+}
+
+.event{
+    padding:32px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .card:hover,.ministry:hover,.event:hover{
@@ -565,7 +572,18 @@ width:100%;
 <div class="ministry"><h3>Family Ministry</h3><p>Building strong families through Christ-centered fellowship.</p></div>
 <div class="ministry"><h3>Community Outreach</h3><p>Serving Decatur with compassion, love, and practical support.</p></div>
 </div>
-<div class="event">
+
+</section>
+
+<section id="events" class="section">
+<p class="kicker">Upcoming Events</p>
+<h1>What’s Happening at New Life.</h1>
+
+<div class="events">
+<div class="event"><span class="event-tag">Weekly</span><h3>Prayer Power Hour</h3><p>Every Tuesday at Noon<br>Conference Line: 681-999-0257<br>Access Code: 877991</p></div>
+<div class="event"><span class="event-tag">Weekly</span><h3>Midweek Family Night</h3><p>Every Wednesday at 6:30 PM</p></div>
+</div>
+    <div class="event">
     <span class="event-tag">Fundraiser</span>
     <h3>Fish Fry Friday</h3>
 
@@ -595,16 +613,6 @@ width:100%;
        class="btn btn-primary">
        View Flyer
     </a>
-</div>
-</section>
-
-<section id="events" class="section">
-<p class="kicker">Upcoming Events</p>
-<h1>What’s Happening at New Life.</h1>
-
-<div class="events">
-<div class="event"><span class="event-tag">Weekly</span><h3>Prayer Power Hour</h3><p>Every Tuesday at Noon<br>Conference Line: 681-999-0257<br>Access Code: 877991</p></div>
-<div class="event"><span class="event-tag">Weekly</span><h3>Midweek Family Night</h3><p>Every Wednesday at 6:30 PM</p></div>
 </div>
 </section>
 
