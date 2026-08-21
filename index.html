@@ -340,6 +340,14 @@ color:var(--purple);
 .events:has(.event:only-child) .event{
     width:100%;
 }
+    #events:has(.event:only-child){
+    text-align:center;
+}
+
+#events:has(.event:only-child)::before{
+    margin-left:auto;
+    margin-right:auto;
+}
 .event p{
 margin-bottom:18px;
 }
