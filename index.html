@@ -81,13 +81,11 @@ color:var(--ink);
 .nav-links a:hover{color:var(--blue)}
 
 .menu{
-display:none;
-background:transparent;
-border:1px solid var(--line);
-color:var(--cream);
-padding:9px 16px;
-border-radius:999px;
-font-weight:800;
+    display:block;
+    color:#18121f;
+    border:1px solid rgba(24,18,31,.25);
+    background:white;
+    font-weight:700;
 }
 
 .hero{
@@ -495,16 +493,21 @@ margin:0 auto 14px;
 .menu{display:block}
 
 .nav-links{
-display:none;
-position:absolute;
-top:78px;
-left:0;
-width:100%;
-background:#08080b;
-flex-direction:column;
-text-align:center;
-padding:24px;
-border-bottom:1px solid var(--line);
+    display:none;
+    position:absolute;
+    top:78px;
+    left:0;
+    width:100%;
+    background:rgba(255,255,255,.98);
+    flex-direction:column;
+    text-align:center;
+    padding:24px;
+    border-bottom:1px solid rgba(23,20,31,.12);
+    box-shadow:0 18px 35px rgba(23,20,31,.08);
+}
+
+.nav-links a{
+    color:#17141f;
 }
 
 .nav-links.open{display:flex}
