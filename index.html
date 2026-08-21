@@ -332,7 +332,14 @@ color:var(--purple);
 
     border-top:4px solid var(--blue);
 }
+.events:has(.event:only-child){
+    grid-template-columns:minmax(0, 620px);
+    justify-content:center;
+}
 
+.events:has(.event:only-child) .event{
+    width:100%;
+}
 .event p{
 margin-bottom:18px;
 }
